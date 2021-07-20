@@ -1,0 +1,39 @@
+Polymorphism
+What does the word 'polymorphism' mean?
+a: polymorphism means one thing that takes many forms
+
+What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+a: Polymorphism in OOP is when an object can belong to more than one class at once. 
+   For example, a car object could be a Car class and also a Vehicle class due to inheritance.
+
+What can we use to implement polymorphism in Java?
+a: Polymorphism can be implemented through using inheritance (parent and child classes), and also by having a class implement an interface.
+
+How many 'forms' can an object take when using polymorphism?
+a: The number of forms an object can take depends on how long a chain of parent and child classes are. e.g. a child class could have a parent, where the parent itself has a parent and so on.
+   Also classes can implement any number of interfaces so again the number of forms could be high
+
+Give an example of when you could use polymorphism.
+a: You could use polymorphism to model a vendor who sells different vehicles. Cars, motorbikes, boats etc.
+   The vendor could keep track of overall stock of all Vehicles using a vehicle parent class which all vehicles inherit from. Then loop through all existing vehicles.
+   And the vendor can also keep track of the stock of all boats for example, by looping through all boat objects.
+
+Composition and Aggregation
+What do we mean by 'composition' in reference to object-oriented programming?
+Composition is when a constructor on a class creates another object.
+
+When would you use composition? Provide a simple example in Java.
+All cars have wheels, so when constructing the car class, we could also use composition to create instances of the wheel class. 
+
+Give a difference between composition and aggregation?
+Aggregation does not create objects in the constructor, but instead has objects passed in to the constructor as arguments.
+
+What is/are the advantage(s) of using composition/aggregation?
+Advantages are that your class will have access to other objects methods which the main object needs, but the functions are abstracted into other objects. 
+This can keep the code in the class cleaner
+
+When using composition, when an object is destroyed, what happens to all the objects it is composed of?
+The objects are destroyed
+
+When using aggregation, when an object is destroyed, what happens to all the objects it is composed of?
+The other objects were created outwith the object, so they are not destroyed.
